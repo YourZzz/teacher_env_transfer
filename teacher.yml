@@ -1,8 +1,3 @@
-name: teacher
-channels:
-  - pytorch
-  - conda-forge
-  - defaults
 dependencies:
   - python=3.9
   - pip
@@ -29,7 +24,8 @@ dependencies:
   - jinja2
   - fonttools
   - typing_extensions
-  - opencv-python-headless=4.11.0.86  # 修正了 OpenCV 版本
+  - opencv-python-headless==4.11.0.86  # 保证版本一致
+  - opencv-contrib-python==4.11.0.86  # 保证版本一致
   - pip:
       - absl-py==2.2.2
       - albucore==0.0.23
